@@ -40,6 +40,6 @@ void MainClock(void){
 }
 void MainSwitchTrigger(void){
 	gameEngine.SwitchPress(&gameEngine);
-	terminal.PutChar((gameEngine.CurrentPress + '0'));
-	terminal.PutChar((gameEngine.CurrentPadState + '0'));
+	//terminal.PutChar((gameEngine.CurrentPress + '0'));
+	//terminal.PutChar((gameEngine.CurrentPadState + '0'));
 }

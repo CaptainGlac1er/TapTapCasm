@@ -15,5 +15,7 @@ void newTerminal(Terminal* newObject)
 	newObject->PutNumU = PutNumU;
 	newObject->CheckChar = CheckChar;
   newObject->PutStringSB = PutStringSB;
+	newObject->NeedUpdate = 0;
+	newObject->DontUpdate = 0;
 	
 }

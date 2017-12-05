@@ -24,8 +24,8 @@ UInt8 GetStatus(Switch* self){
 void EnableSwitchInterrupts (void (*trigger)(void)){
 	
 	__ASM ("CPSID I");
-	NVIC->ICPR[0] |= 1 << 31;
-	NVIC->ISER[0] |= 1 << 31;
+	NVIC->ICPR[0] |= (UInt32)(1 << 31);
+	NVIC->ISER[0] |= (UInt32)(1 << 31);
 	__ASM ("CPSIE I");
 	SwitchTrigger = trigger;
 }

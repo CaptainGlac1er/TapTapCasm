@@ -24,6 +24,8 @@ typedef struct Terminal{
 	void (*PutNumUB) (UInt8 inputt);
 	void (*PutNumU) (UInt8 input);
 	UInt8 (*CheckChar) (void);
+	UInt8 NeedUpdate;
+	UInt8 DontUpdate;
 	//void (*PutChar) (struct Random*, UInt8 max);
 	
 	
